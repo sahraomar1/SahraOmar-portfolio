@@ -4,7 +4,7 @@ function toggleMenu() {
   menu.classList.toggle('show');
 }
 
-// Simple contact form validation
+
 function validateForm() {
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
@@ -12,7 +12,7 @@ function validateForm() {
 
   if (name === '' || email === '' || message === '') {
     alert('Please fill in all fields before submitting.');
-    return false;
+    return false; //To stop form submission
   }
 
   // Basic email validation
@@ -23,5 +23,5 @@ function validateForm() {
   }
 
   alert('Thank you for your message, ' + name + '!');
-  return true; // Allow form submission (for now; no backend)
+  return true;  //To allow form submission
 }
